@@ -31,7 +31,7 @@ consumers:
   - name: silver
   tags:
   - platform-repo-managed
-  username: jsmith
+  username: anoop
 plugins:
 - config:
     account_email: '{vault://env/acme/account_email}'
