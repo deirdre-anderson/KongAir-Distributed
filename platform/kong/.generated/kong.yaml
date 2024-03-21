@@ -18,10 +18,10 @@ consumer_groups:
   - platform-repo-managed
 consumers:
 - groups:
-  - name: platinum
+  - name: platinumgi
   tags:
   - platform-repo-managed
-  username: deirdre
+  username: newuser
 - groups:
   - name: gold
   tags:
