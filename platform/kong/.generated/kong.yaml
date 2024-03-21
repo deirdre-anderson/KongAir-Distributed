@@ -18,7 +18,7 @@ consumer_groups:
   - platform-repo-managed
 consumers:
 - groups:
-  - name: platinumgi
+  - name: platinum
   tags:
   - platform-repo-managed
   username: newuser
