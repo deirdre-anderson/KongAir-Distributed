@@ -1,7 +1,7 @@
 consumers:
 - username: newuser
   groups:
-  - name: platinumgi
+  - name: platinum
 - username: jdoe
   groups:
   - name: gold
