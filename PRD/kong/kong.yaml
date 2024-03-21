@@ -21,7 +21,7 @@ consumers:
   - name: platinum
   tags:
   - platform-repo-managed
-  username: deirdre
+  username: newuser
 - groups:
   - name: gold
   tags:
