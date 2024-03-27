@@ -1,5 +1,8 @@
 name: Stage changes for Kong App Team
 
+on:
+  workflow_call:
+
 jobs:
 
   oas-to-kong:
