@@ -38,15 +38,6 @@ jobs:
           filters: |
             files:
               - '.github/workflows/stage-changes-for-kong.yaml'
-              - 'flight-data/flights/openapi.yaml'
-              - 'flight-data/flights/kong/**'
-              - 'flight-data/routes/openapi.yaml'
-              - 'flight-data/routes/kong/**'
-              - 'sales/bookings/opeanapi.yaml'
-              - 'sales/bookings/kong/**'
-              - 'sales/customer/opeanapi.yaml'
-              - 'sales/customer/kong/**'
-              - 'experience/kong/**'
               - 'platform/kong/**'
 
   oas-to-kong:
