@@ -8,9 +8,6 @@ jobs:
   oas-to-kong:
     name: Convert OAS to Kong configurations
 
-    needs: has-changes
-    if: ${{ needs.has-changes.outputs.are-changes == 'true' }}
-
     runs-on: ubuntu-latest
 
     steps:
