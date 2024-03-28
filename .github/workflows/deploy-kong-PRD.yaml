@@ -10,7 +10,6 @@ on:
       - main
     paths:
       - PRD/kong/kong.yaml
-      - .github/workflows/deploy-kong-PRD.yaml
 
 jobs:
 
