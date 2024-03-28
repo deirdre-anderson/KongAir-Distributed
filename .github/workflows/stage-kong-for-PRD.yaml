@@ -2,9 +2,9 @@ name: Stage Kong changes for PRD in a PR
 
 on:
   workflow_call:
-    secrets:
-      KONNECT_PAT:
-        required: true
+    # secrets:
+    #   KONNECT_PAT:
+    #     required: true
   push:
     branches:
       - main
