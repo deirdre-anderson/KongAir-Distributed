@@ -43,8 +43,8 @@ jobs:
   oas-to-kong:
     name: Convert OAS to Kong configurations
 
-    needs: has-changes
-    if: ${{ needs.has-changes.outputs.are-changes == 'true' }}
+    # needs: has-changes
+    # if: ${{ needs.has-changes.outputs.are-changes == 'true' }}
 
     runs-on: ubuntu-latest
 
@@ -123,7 +123,6 @@ jobs:
         #   it should help with PR reviews, transparency, and debugging.
         run: |
           deck file merge \
-            .github/artifacts/kong/kong-combined.yaml \
             platform/kong/platform-kong-base.yaml     \
             platform/kong/consumers/*                 \
             platform/kong/plugins/*                   \

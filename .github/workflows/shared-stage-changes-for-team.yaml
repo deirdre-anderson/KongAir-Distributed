@@ -27,7 +27,7 @@ jobs:
         run: |
           deck file openapi2kong -s flight-data/flights/openapi.yaml | \
             deck file patch flight-data/flights/kong/patches.yaml | \
-            deck file add-tags -o .github/artifacts/kong/flight-data-flights-kong.yaml \
+            deck file add-tags -o config/kong/.generated/kong.yaml \
               --selector "$.services[*]" --selector "$.services[*].routes[*]" flight-data
 
       - name: Upload Artifacts
