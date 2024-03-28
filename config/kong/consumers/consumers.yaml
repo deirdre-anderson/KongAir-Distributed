@@ -2,7 +2,7 @@ consumers:
 - username: newuser
   groups:
   - name: platinum
-- username: jdoe
+- username: test
   groups:
   - name: gold
 - username: deirdre
