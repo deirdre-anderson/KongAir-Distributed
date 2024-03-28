@@ -5,6 +5,6 @@ consumers:
 - username: jdoe
   groups:
   - name: gold
-- username: anoop
+- username: deirdre
   groups:
   - name: silver
