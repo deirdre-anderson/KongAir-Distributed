@@ -28,7 +28,10 @@ jobs:
           deck file openapi2kong -s flight-data/flights/openapi.yaml | \
             deck file patch flight-data/flights/kong/patches.yaml | \
             deck file add-tags -o config/kong/.generated/kong.yaml \
-              --selector "$.services[*]" --selector "$.services[*].routes[*]" flight-data
+              --selector "$.services[*]" --selector "$.services[*].routes[*]" flight-data \
+          deck file add-tags \
+            -o config/kong/.generated/kong.yaml \
+            "repo-managed"
 
       - name: Upload Artifacts
         # Artifacts are the files that are built along the way of the pipeline but are not committed to the repo
@@ -38,7 +41,7 @@ jobs:
           path: .github/artifacts/kong/*.yaml
 
       - name: Create PR for changed Kong Gateway Configuration
-        # The only file that should be changed for this PR is platform/kong/.generated/kong.yaml
+        # The only file that should be changed for this PR is config/kong/.generated/kong.yaml
         uses: peter-evans/create-pull-request@v5
         with:
           title: Stage Kong Gateway Configuration

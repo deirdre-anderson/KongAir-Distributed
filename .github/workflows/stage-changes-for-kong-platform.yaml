@@ -131,7 +131,7 @@ jobs:
             platform/kong/patches.yaml |
           deck file add-tags \
             -o platform/kong/.generated/kong.yaml \
-            "platform-repo-managed"
+            "repo-managed"
 
       - name: Upload Artifacts
         # Artifacts are the files that are built along the way of the pipeline but are not committed to the repo
